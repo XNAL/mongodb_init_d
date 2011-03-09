@@ -29,7 +29,8 @@ case "$1" in
         ;;
   stop)
         echo -n "Stopping $DESC: "
-        start-stop-daemon --quiet --pidfile $PIFDILE --exec $DAEMON --stop
+        start-stop-daemon --stop --quiet --pidfile $PIDFILE
+        rm $PIDFILE
         echo "$NAME."
         ;;
   restart|force-reload)
