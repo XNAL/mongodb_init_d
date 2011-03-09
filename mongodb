@@ -12,8 +12,8 @@
 
 PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
 DAEMON=/usr/local/mongodb/bin/mongod
-PIDFILE=/usr/local/mongodb/logs/mongodb.pid
-LOGFILE=/usr/local/mongodb/logs/mongod.log
+PIDFILE=/var/run/mongodb.pid
+LOGFILE=/var/logs/mongod.log
 NAME=mongodb
 DESC=mongodb
 
